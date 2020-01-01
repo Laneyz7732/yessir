@@ -1,1 +1,1 @@
-worker: server.js
+worker: start
