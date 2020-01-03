@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
     message.delete(message)
 
     if (talkedRecently.has(message.author.id)) {
-        message.reply(`You need to wait ${config.cooldown} minutes to use this command again!`).then(m => {
+        message.reply(`You need to wait ${config.cooldown} minutes to use this command again!`)
         })
     } else {
         fs.readFile('./uplay.txt', function(err, data){
