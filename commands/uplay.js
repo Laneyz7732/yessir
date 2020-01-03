@@ -9,9 +9,6 @@ exports.run = (client, message, args) => {
 
     if (talkedRecently.has(message.author.id)) {
         message.reply(`You need to wait ${config.cooldown} minutes to use this command again!`).then(m => {
-            setTimeout(() => {
-                m.delete(m)
-            }, 5000); //5 seconds
         })
     } else {
         fs.readFile('./uplay.txt', function(err, data){
@@ -28,10 +25,7 @@ exports.run = (client, message, args) => {
             .setColor(hex)
             message.author.send(embed)
 
-            message.reply("Sent you uPlay Alt!").then(m => {
-                setTimeout(() => {
-                    m.delete(m)
-                }, 5000); //5 seconds
+            message.reply("Sent you uPlay Alt!")
             })
 
             talkedRecently.add(message.author.id);
