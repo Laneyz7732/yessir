@@ -8,10 +8,7 @@ exports.run = (client, message, args) => {
     message.delete(message)
 
     if (talkedRecently.has(message.author.id)) {
-        message.reply(`You need to wait ${config.cooldown} minutes to use this command again!`).then(m => {
-            setTimeout(() => {
-                m.delete(m)
-            }, 5000); //5 seconds
+        message.reply(`You need to wait ${config.cooldown} minutes to use this command again!`)
         })
     } else {
         fs.readFile('./origin.txt', function(err, data){
@@ -28,10 +25,7 @@ exports.run = (client, message, args) => {
             .setColor(hex)
             .addField("https://forms.gle/uhXyieLVYbikQz369")
 
-            message.reply("Sent you Origin Alt!").then(m => {
-                setTimeout(() => {
-                    m.delete(m)
-                }, 5000); //5 seconds
+            message.reply("Sent you Origin Alt!")
             })
 
             talkedRecently.add(message.author.id);
