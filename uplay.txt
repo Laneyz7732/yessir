@@ -1,0 +1,4 @@
+**Rage Status**
+🔧 - In Development.
+Detected - 🔴
+Leaked - 🔴
