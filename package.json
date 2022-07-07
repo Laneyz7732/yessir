@@ -20,7 +20,7 @@
     "simple-youtube-api": "^5.2.1",
     "ytdl-core": "^0.29.5",
     "gif-search": "^2.0.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-duration-format": "^2.2.2",
     "cpu-stat": "^2.0.1",
     "ytdl-core-discord": "^1.0.3",
